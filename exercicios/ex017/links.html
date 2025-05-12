@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        
+
+        a:hover { /* mouse em cima */
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active { /* acao do clique */
+            color: green;
+        }
+
+        a::after {
+            content: '';
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://shop.samsung.com/br/galaxy-book4-core-5-16gb-512gb/p" target="_blank" rel="external">Samsung</a></li>
+    </ul>
+</body>
+</html>
