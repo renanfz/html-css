@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MeuSite</title>
     <style>
         :root {
             --roxo:rgb(109, 22, 190);
@@ -17,7 +17,7 @@
         }
         div {
             display: block;
-            width: 500px;
+            width: 420px;
             height: 270px;
             margin: auto;
             text-align: center;
@@ -46,6 +46,18 @@
             width: 80px;
             height: 25px;
         }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.075);
+            color: black;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +67,7 @@
         <textarea id="msg" placeholder="Como você está se sentindo agora?..."></textarea>
         <input id="btn" type="button" value="Enviar" onclick="enviar()">
     </div>
+    <footer><i>Desenvolvido por Renan</i></footer>
     <script>
         var executada = false;
 
