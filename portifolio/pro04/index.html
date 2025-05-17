@@ -4,61 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeuSite</title>
-    <style>
-        :root {
-            --roxo:rgb(109, 22, 190);
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        h1 {
-            color: var(--roxo);
-        }
-        div {
-            display: block;
-            width: 420px;
-            height: 270px;
-            margin: auto;
-            text-align: center;
-            border: 1px solid rgba(0, 0, 0, 0.068);
-            border-radius: 25px;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
-        }
-
-        textarea {
-            width: 350px;
-            height: 100px;
-            resize: none;
-            font-size: 1.1em;
-            padding: 8px;
-            border: 2px solid rgba(0, 0, 0, 0.253);
-            border-radius: 6px;
-        }
-
-        textarea:hover {
-            border-color: var(--roxo);
-        }
-
-        input {
-            display: block;
-            margin: 10px auto;
-            width: 80px;
-            height: 25px;
-        }
-
-        footer {
-            background-color: rgba(0, 0, 0, 0.075);
-            color: black;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Oi, Sarah  :)</h1>
@@ -67,34 +13,13 @@
         <textarea id="msg" placeholder="Como você está se sentindo agora?..."></textarea>
         <input id="btn" type="button" value="Enviar" onclick="enviar()">
     </div>
+
+    <div id="resposta">
+        
+    </div>
+
     <footer><i>Desenvolvido por Renan</i></footer>
-    <script>
-        var executada = false;
 
-        function enviar() {
-            var btn = document.getElementById("btn");
-            var msg = document.getElementById("msg");
-
-            if (!validar(msg)) {
-                return;
-            }
-
-            if (!executada) {
-                window.alert("Obrigado por compartilhar!")
-                msg.value = ''
-                executada = true;
-            } else {
-                window.alert("Você já enviou uma resposta!")
-            }
-        }
-
-        function validar(textbox) {
-            if (textbox.value.trim() === '') {
-                window.alert("O campo está vazio!")
-                return false;
-            }
-            return true;
-        }
-    </script>
+    <script src="logica.js"></script>
 </body>
 </html>
