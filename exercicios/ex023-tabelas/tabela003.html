@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+        
+        table {
+            font-size: 1.3em;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        
+        td, th {
+            border: 1px solid rgba(0, 0, 0, 0.486);
+            padding: 10px;
+            text-align: left;
+        }
+
+/*         th {
+            background-color: rgba(0, 140, 255, 0.527);
+            border: 1px solid rgba(0, 0, 0, 0.315);
+            padding: 10px;
+            text-align: center;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <colgroup>
+            <col style="width: 100px;">
+            <col style="width: 200px;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="col" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matriz</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="row"rowspan="3">Homens</th>
+                <td>Renan Freitas</td>
+                <td>Transformens</td>
+                <td>Calibri</td>
+                <td>Dexter</td>
+            </tr>
+            <tr>
+                <td>Victor</td>
+                <td>Bob Esponja</td>
+                <td>Ferry 2</td>
+                <td>La Casa de Papel</td>
+            </tr>
+            <tr>
+                <td>Sarah</td>
+                <td>Dexter</td>
+                <td>You</td>
+                <td>O Jardineiro</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
