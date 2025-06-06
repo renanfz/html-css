@@ -21,8 +21,17 @@
             text-align: left;
         }
 
+        col#cgrupo {
+            background-color: beige;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+
+
 /*         th {
-            background-color: rgba(0, 140, 255, 0.527);
+            background-color: rgba(0, 68, 255, 0.192);
             border: 1px solid rgba(0, 0, 0, 0.315);
             padding: 10px;
             text-align: center;
@@ -30,58 +39,124 @@
     </style>
 </head>
 <body>
-    <h1>Mesclagem de células</h1>
+    <h1>Filmes favoritos</h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col id="cgrupo" span="2">
+                <col id="cfilmes">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="col" colspan="3">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"rowspan="3">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Claudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matriz</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th scope="row"rowspan="3">Homens</th>
+                    <td>Renan Freitas</td>
+                    <td>Transformers</td>
+                    <td>Calibri</td>
+                    <td>Dexter</td>
+                </tr>
+                <tr>
+                    <td>Victor</td>
+                    <td>Bob Esponja</td>
+                    <td>Ferry 2</td>
+                    <td>La Casa de Papel</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>Dexter</td>
+                    <td>You</td>
+                    <td>O Jardineiro</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h1>Notas</h1>
     <table>
-        <colgroup>
-            <col style="width: 100px;">
-            <col style="width: 200px;">
-        </colgroup>
         <thead>
             <tr>
-                <th scope="col">Grupo</th>
-                <th scope="col">Nomes</th>
-                <th scope="col" colspan="3">Filmes</th>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row"rowspan="3">Mulheres</th>
-                <td>Ana Maria Santos</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>
+                <th rowspan="3">Exatas</th>
+                <td>MAT</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
             </tr>
             <tr>
-                <td>Beatriz Souza</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batman</td>
+                <td>FIS</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
             </tr>
             <tr>
-                <td>Claudia Melo</td>
-                <td>Oblivion</td>
-                <td>Matriz</td>
-                <td>Big Hero</td>
+                <td>BIO</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="4">Média de Exatas</th>
+                <th>0.0</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>HIS</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
             </tr>
             <tr>
-                <th scope="row"rowspan="3">Homens</th>
-                <td>Renan Freitas</td>
-                <td>Transformens</td>
-                <td>Calibri</td>
-                <td>Dexter</td>
+                <td>GEO</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
             </tr>
-            <tr>
-                <td>Victor</td>
-                <td>Bob Esponja</td>
-                <td>Ferry 2</td>
-                <td>La Casa de Papel</td>
-            </tr>
-            <tr>
-                <td>Sarah</td>
-                <td>Dexter</td>
-                <td>You</td>
-                <td>O Jardineiro</td>
-            </tr>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Média de Humanas</th>
+                    <th>0.0</th>
+                </tr>
+            </tfoot>
         </tbody>
     </table>
 </body>
