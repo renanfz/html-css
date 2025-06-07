@@ -60,6 +60,11 @@ h1#nome {
     padding: 5px 0px 0px 10px;
 }
 
+h1#titulo {
+    margin-bottom: 20px;
+    color: gray;
+}
+
 img.externa {
     width: 50%;
     border-radius: 10px;
@@ -100,4 +105,11 @@ ul li {
 
 p {
     margin-bottom: 30px;
+}
+
+footer > p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
 }
