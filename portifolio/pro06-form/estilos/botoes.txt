@@ -1,0 +1,39 @@
+HTML ---------------
+
+<div class="grupo-nome">
+    <input required type="text" id="nome">
+    <label for="nome">Nome</label>
+</div>
+
+CSS ----------------
+
+div.grupo-nome {
+    position: relative;
+
+}
+
+label {
+    color: var(--azul);
+    padding: 0 5px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 1em;
+    pointer-events: none;
+    transition: .3s;
+}
+
+input {
+    color: white;
+    border: 2px solid var(--azul);
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    padding: 0 1rem;
+    outline: none;
+}
+
+input:focus~label,
+input {
+
+}
