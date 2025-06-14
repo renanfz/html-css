@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden", /* Botoes do menu lateral */
+    "workbench.statusBar.visible": false, /* Informacoes fixadas em baixo */
 }
