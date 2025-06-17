@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        fieldset {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controles de formulário</h1>
+    <form action="cadastro.py" method="post">
+        <fieldset>
+            <legend>Seus dados</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input
+                  type="text"
+                  name="nome"
+                  id="inome"
+                  required
+                >
+            </p>
+            <p>
+                <label for="imatricula">Matricula</label>
+                <input
+                  type="number"
+                  name="matricula"
+                  id="imatricula"
+                  minlength="0"
+                  maxlength="4"
+                  required
+                >
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="iemail"
+                >
+            </p>
+        </fieldset>
+        <input
+          type="submit"
+          name="enviar"
+          id="idenviar"
+        >
+    </form>
+</body>
+</html>
