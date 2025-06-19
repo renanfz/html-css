@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        body {
+            font-family: monospace;
+        }
+
+        fieldset {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Check-in no Hotel</h2>
+    <p>Bem vindo ao nosso hotel! Por favor, preencha as informações abaixo</p>
+    <fieldset>
+        <legend>Reserva</legend>
+        <form action="cadastro.py" autocomplete="off">
+            <label for="inome">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="inome"
+              autocomplete="name"
+              required
+            ><br>
+
+            <label for="iemail">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="iemail"
+            ><br>
+
+            <label for="icheckin">Check-in</label>
+            <input
+              type="date"
+              name="checkin"
+              id="icheckin"
+            ><br>
+
+            <label for="icheckout">Check-out</label>
+            <input
+              type="date"
+              name="checkout"
+              id="icheckout"
+            >
+
+            <label for="icategoria">Categoria</label>
+            <input
+              type="text"
+              name=""
+              id=""
+
+            >
+            <button type="submit" id="ienviar">Enviar</button>
+        </form>
+    </fieldset>
+    <script src="cadastro.py"></script>
+</body>
+</html>

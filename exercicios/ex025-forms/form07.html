@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        body {
+            font-family: monospace;
+        }
+
+        fieldset {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select, datalist e textarea</h2>
+    <form action="cadastro.php" method="post">
+        <fieldset><legend>Select</legend>
+            <label for="marca">Selecione uma marca</label>
+            <select name="marca" id="marca">
+              <option value="SAM">Samsung</option>
+              <option value="APL">Apple</option>
+              <option value="XIA">Xiaomi</option>
+              <option value="MOT">Motorola</option>
+            </select>      
+        </fieldset><br>
+
+        <fieldset><legend>Datalist</legend>
+          <label for="estado">Selecione um Estado</label>
+          <input
+            type="text"
+            name="estado"
+            id="estado"
+            list="list_estado"
+          >
+          <datalist id="list_estado">
+            <option value="RJ"></option>
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+          </datalist>
+        </fieldset><br>
+
+        <fieldset><legend>Textarea</legend>
+          <textarea name="obs" id="obs" cols="0" rows="4">
+
+          </textarea>
+        </fieldset>
+    </form>
+</body>
+</html>

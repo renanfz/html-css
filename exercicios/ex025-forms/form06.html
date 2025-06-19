@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        body {
+            font-family: monospace;
+        }
+
+        fieldset {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Radio button e checkbox</h2>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Marcas favoritas - Checkbox</legend>
+            <input
+              type="checkbox"
+              name="honda"
+              id="ihonda"
+              checked
+            >
+            <label for="ihonda">Honda</label><br>
+            <input
+              type="checkbox"
+              name="yamaha "
+              id="iyamaha"
+            >
+            <label for="iyamaha">Yamaha</label><br>
+            <input
+              type="checkbox"
+              name="bajaj"
+              id="ibajaj"
+            >
+            <label for="ibajaj">Bajaj</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo - Radio</legend>
+            <input
+              type="radio"
+              name="sexo"
+              id="imas"
+              checked
+            ><label for="imas">Masculino</label>
+            <input
+              type="radio"
+              name="sexo"
+              id="ifem"
+            ><label for="ifem">Feminino</label>
+            <select name="" id="">
+                
+            </select>
+        </fieldset>
+    </form>
+
+</body>
+</html>

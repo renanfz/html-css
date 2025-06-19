@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <style>
+    <style>
         body {
             font-family: monospace;
         }
@@ -15,42 +15,29 @@
     </style>
 </head>
 <body>
-    <h2>Check-in no Hotel</h2>
-    <p>Bem vindo ao nosso hotel! Por favor, preencha as informações abaixo</p>
-    <fieldset>
-        <legend>Reserva</legend>
-        <form action="cadastro.py" autocomplete="off">
-            <label for="inome">Nome</label>
-            <input
-              type="text"
-              name="nome"
-              id="inome"
-              autocomplete="name"
-              required
-            ><br>
+    <h2>Cores, range e file</h2>
+    <form action="cadastro.php">
+        <label for="icor">Selecione uma cor</label>
+        <input
+          type="color"
+          name="cor"
+          id="icor"
+        >
 
-            <label for="iemail">E-mail</label>
-            <input
-              type="email"
-              name="email"
-              id="iemail"
-            ><br>
-
-            <label for="icheckin">Check-in</label>
-            <input
-              type="date"
-              name="checkin"
-              id="icheckin"
-            ><br>
-
-            <label for="icheckout">Check-out</label>
-            <input
-              type="date"
-              name="checkout"
-              id="icheckout"
-            >
-            <button type="submit" id="ienviar">Enviar</button>
-        </form>
-    </fieldset>
+        <label for="inota">Nota</label>
+        <input
+          type="range"
+          name="nota"
+          id="inota"
+          min="0"
+          max="25"
+          value="0"
+        >
+        <input
+          type="file"
+          name="file"
+          id="ifile"
+        >
+    </form>
 </body>
 </html>
