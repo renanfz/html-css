@@ -11,19 +11,62 @@
 
 body {
     font-family: monospace;
+    background-color: rgba(233, 233, 233, 0.973);
 }
 
-div {
+fieldset {
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    width: 500px;
+    height: 375px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.144);
+}
+
+.title-group {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.form-group {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.137);
-    
-    padding: 5px;
-    margin: 30px;
-    justify-content: space-between;
-
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0px 0px 15px 10px;
 }
 
-div button {
-    
+.form-group label {
+    width: 200px;
+}
 
+.form-group input {
+    height: 22px;
+    width: 250px;
+    text-indent: 5px;
+    border-radius: 0px;
+    border: 1px solid black;
+}
+
+#idcheckin, #ihcheckin, #ihcheckout {
+    width: 120px;
+}
+
+button#ienviar {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 75px;
+}
+
+button#ilimpar {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 75px;
 }
