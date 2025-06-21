@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Estilo de impressão */
+
+* {
+    margin: 8px;
+    padding: 8px;
+}
+
+header {
+    display: none;
+}
+
+main::after {
+    content: 'Versao 1.0';
+}

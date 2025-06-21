@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Estilo padrão */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    margin: 10px;
+}
+
+header li {
+    display: inline-block;
+    padding: 7px;
+}
+
+main {
+    margin: 10px;
+    width: 600px;
+    margin: auto;
+}
+
+h2 {
+    margin: 8px 0px 8px 0px;
+}
