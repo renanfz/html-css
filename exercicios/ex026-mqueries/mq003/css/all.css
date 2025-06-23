@@ -1,3 +1,22 @@
 @charset "UTF-8";
 
-/* Configurações gerais */ 
+/* Configurações gerais - Pra tudo*/ 
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+
+h1 {
+    padding: 10px;
+    color: white;
+}
