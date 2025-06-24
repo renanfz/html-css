@@ -1,4 +1,5 @@
 var executada = false;
+nome()
 
 function enviar() {
     var btn = document.getElementById("btn");
@@ -36,3 +37,10 @@ function exibir(mensg) {
     popup.style.transition = "2s"
     popup.style.display = "block"
 }
+
+function nome() {
+    let h1 = document.getElementById('nome');
+    let nome = String(prompt('Qual o seu nome?'));
+    h1.innerHTML = (`Olá, ${nome}!`);
+}
+
