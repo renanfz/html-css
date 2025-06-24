@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(218, 218, 218, 0.719);
+}
+
+div#container {
+    display: block;
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    padding: 15px;
+}
+
+div#titulo { /* Area do titulo */
+    display: block;
+    margin-bottom: 20px;
+}
+
+div.input-group {
+    margin-bottom: 15px;
+
+}
+
+div.input-group label { /* Labels */
+    display: block;
+    margin-bottom: 3px;
+    width: 200px;
+}
+
+div.input-group input { /* TextBox */
+    height: 28px;
+    text-indent: 5px;
+}
