@@ -1,21 +1,27 @@
 @charset "UTF-8";
 
+:root {
+    --azul: #0078D7 
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
-html, body {
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(218, 218, 218, 0.719);
 }
 
-div#container {
+div#container { /* Caixa principal */
     display: block;
     background-color: white;
-    width: 90vw;
+    width: 450px;
     margin: auto;
+    margin-top: 40px;
     padding: 15px;
+    border-radius: 8px;
 }
 
 div#titulo { /* Area do titulo */
@@ -32,9 +38,35 @@ div.input-group label { /* Labels */
     display: block;
     margin-bottom: 3px;
     width: 200px;
+    font-weight: 500;
+    font-size: 0.90em;
 }
 
 div.input-group input { /* TextBox */
     height: 28px;
     text-indent: 5px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+}
+
+button#continuar {
+    height: 30px;
+    width: 100px;
+    background-color: var(--azul);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-top: 5px;
+}
+
+button#continuar:hover {
+    transition: 0.3s;
+    background-color: #0066b9;
 }
