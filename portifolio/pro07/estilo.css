@@ -44,7 +44,7 @@ div.input-group label { /* Labels */
 
 div.input-group input { /* TextBox */
     height: 28px;
-    text-indent: 5px;
+    text-indent: 8px;
 }
 
 button {
@@ -70,3 +70,5 @@ button#continuar:hover {
     transition: 0.3s;
     background-color: #0066b9;
 }
+
+input::placeholder {text-align: right;}
