@@ -44,6 +44,7 @@ div.input-group label { /* Labels */
 
 div.input-group input { /* TextBox */
     height: 28px;
+    width: 170px;
     text-indent: 8px;
 }
 

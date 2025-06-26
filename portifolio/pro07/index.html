@@ -13,7 +13,7 @@
             <p>Insira o valor da conta para calcular o troco</p>
         </div>
 
-        <form action="">
+        <form id="formulario" onsubmit="processar()">
             <div class="input-group">
                 <label for="subtotal">Sub total</label>
                 <input type="number" name="subtotal" id="subtotal" required>
@@ -26,20 +26,20 @@
             
             <div class="input-group">
                 <label for="recebido">Total recebido em dinheiro</label>
-                <input type="number" name="recebido" id="recebido" required>
+                <input type="number" name="recebido" id="recebido" required value="">
             </div>
 
             <div class="input-group">
                 <label for="troco">Troco em dinheiro</label>
-                <input type="number" name="troco" id="troco">
+                <input type="text" name="troco" id="troco" readonly>
             </div>
 
             <div class="input-group">
                 <label for="total">Total da venda</label>
-                <input type="number" name="total" id="total">
+                <input type="text" name="total" id="total" readonly>
             </div>
 
-            <button type="button" id="continuar" onclick="processar()">Finalizar</button>
+            <button type="submit" id="continuar">Finalizar</button>
             <button type="reset">Cancelar</button>
             <script src="logica.js"></script>
         </form>
