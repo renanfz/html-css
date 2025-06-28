@@ -1,6 +1,5 @@
 
 function processar() {
-    /* validar() */
     let subtotal = parseFloat(document.getElementById('subtotal').value);
     let percentual = parseFloat(document.getElementById('desconto').value);
     let recebido = parseFloat(document.getElementById('recebido').value);
@@ -18,19 +17,3 @@ document.getElementById('formulario').addEventListener('submit', function (e) {
     e.preventDefault(); // impede o envio, mas valida antes
     processar();
 });
-/* function validar() {
-    let subtotal = document.getElementById('subtotal');
-    let percentual = document.getElementById('desconto');
-    let recebido = document.getElementById('recebido');
-
-    if (!percentual.checkValidity()) {
-        window.alert('Campo Percentual inválido!')
-        return;
-    } else {
-        processar();
-    }
-}
-
-
-
-processar() */

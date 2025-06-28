@@ -13,7 +13,7 @@ Grandes telas: acima de 1200px
 */
 
 
-@media print {
+@media print { /* IMPRESSORA */
     * {
         font-family: monospace;
     }

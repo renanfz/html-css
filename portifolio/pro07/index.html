@@ -16,17 +16,17 @@
         <form id="formulario" onsubmit="processar()">
             <div class="input-group">
                 <label for="subtotal">Sub total</label>
-                <input type="number" name="subtotal" id="subtotal" required>
+                <input type="number" name="subtotal" id="subtotal" required placeholder="R$ 0,00">
             </div>
 
             <div class="input-group">
                 <label for="desconto">Desconto</label>
-                <input type="number" name="desconto" id="desconto" placeholder="%" min="1" max="50">
+                <input type="number" name="desconto" id="desconto" placeholder="Porcentagem" min="1" max="50">
             </div>
             
             <div class="input-group">
                 <label for="recebido">Total recebido em dinheiro</label>
-                <input type="number" name="recebido" id="recebido" required value="">
+                <input type="number" name="recebido" id="recebido" placeholder="R$ 0,00" required>
             </div>
 
             <div class="input-group">
@@ -39,10 +39,15 @@
                 <input type="text" name="total" id="total" readonly>
             </div>
 
-            <button type="submit" id="continuar">Finalizar</button>
-            <button type="reset">Cancelar</button>
-            <script src="logica.js"></script>
+            <div id="botoes">
+                <button type="submit" id="continuar">Finalizar</button>
+                <button type="reset">Cancelar</button>
+            </div>
         </form>
     </div>
+    <footer>
+        <p><i>Desenvolvido por Renan</i></p>
+    </footer>
+    <script src="logica.js"></script>
 </body>
 </html>

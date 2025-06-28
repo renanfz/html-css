@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --azul: #0078D7 
+    --azul: #0078D7;
+    --azulescuro: #0066b9;
 }
 
 * {
@@ -15,9 +16,11 @@ body {
 }
 
 div#container { /* Caixa principal */
+    z-index: 1;
     display: block;
     background-color: white;
-    width: 450px;
+    width: 400px;
+    height: 515px;
     margin: auto;
     margin-top: 40px;
     padding: 15px;
@@ -43,24 +46,31 @@ div.input-group label { /* Labels */
 }
 
 div.input-group input { /* TextBox */
-    height: 28px;
-    width: 170px;
+    background-color: rgba(128, 128, 128, 0.212);
+    height: 40px;
+    width: 200px;
     text-indent: 8px;
+    border: none;
+    border-radius: 6px;
+}
+div#botoes {
+
 }
 
 button {
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 120px;
     background-color: white;
     border-radius: 5px;
-    border: 1px solid var(--azul);
-    color: var(--azul);
+    border: 1px solid black;
+    color: black;
 }
 
+
 button#continuar {
-    height: 30px;
-    width: 100px;
-    background-color: var(--azul);
+    height: 35px;
+    width: 120px;
+    background-color: black;
     border-radius: 5px;
     border: none;
     color: white;
@@ -69,7 +79,19 @@ button#continuar {
 
 button#continuar:hover {
     transition: 0.3s;
-    background-color: #0066b9;
+    background-color: #000000b2;
 }
 
-input::placeholder {text-align: right;}
+input::placeholder {text-align: left;}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.952);
+    color: white;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
