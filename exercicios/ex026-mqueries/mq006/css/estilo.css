@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* Mobile First */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: rgba(218, 218, 218, 0.253);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: white;
+
+
+}
+
+header h1 {
+    display: block;
+    padding: 10px;
+}
+menu {
+    display: block;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.116);
+}
+
+menu > ul {
+    list-style: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-indent: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+menu > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.13);
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+}
