@@ -3,43 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title>Dialog</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+        * {
+            font-family: 'Segoe UI';
+            }
 
-        div {
-            border: 1px solid gray;
-        }
+            button {
+            background-color: black;
+            color: white;
+            height: 30px;
+            border-radius: 7px;
+            border: none;
+            }
 
-        .principal {
-            display: block;
-            height: 450px;
-            width: 450px;
-        }
-
-        .item1 {
-            background-color: lightblue;
-            display: inline;
-        }
-
-        .item2 {
-            background-color: lightblue;
-            display: grid;
-        }
+            dialog {
+            border-radius: 7px;
+            border: none;
+            transition: .3s ease;
+            }
     </style>
 </head>
 <body>
-    <h2>Testando display e comportamentos</h2><br>
-    <div class="principal">
-        <div class="item1">
-            <p>item 1</p>
-        </div>  
-        <div class="item2">
-            <label for="">Nome</label>
-            <input type="text">
-        </div>      
-    </div>
+    <button>Abrir pop up</button>
+    <dialog>
+        <p>Função indisponivel</p>
+        <button>Ok</button>
+    </dialog>
+
+    <script>
+        let modal = document.querySelector("dialog")
+        let button = document.querySelector("button")
+        let buttonOk = document.querySelector("dialog button")
+
+        button.onclick = function () {
+        modal.showModal()
+        }
+
+        buttonOk.onclick = function () {
+        modal.close()
+        }
+    </script>
 </body>
 </html>
