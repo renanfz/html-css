@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Mobile First */
+
+:root {
+    --preto: #505050;
+    --azul: #0078D7;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+header > h1 {
+    color: black;
+    padding-left: 7px;
+}
+
+menu > ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+
+    background-color: var(--preto);
+    list-style: none;
+}
+
+li {
+    padding: 6px;
+}
+
+li:hover {
+    background-color: #6d6d6d;
+}
+
+menu > ul > li > a { /* itens - botoes */
+    text-decoration: none;
+    color: white;
+    
+}
