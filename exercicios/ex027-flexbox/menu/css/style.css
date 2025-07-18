@@ -43,5 +43,12 @@ li:hover {
 menu > ul > li > a { /* itens - botoes */
     text-decoration: none;
     color: white;
-    
+}
+
+main {
+    border: 1px solid rgba(0, 0, 0, 0.249);
+    border-radius: 10px;
+    margin: 7px;
+    padding: 10px;
+    text-align: justify;
 }

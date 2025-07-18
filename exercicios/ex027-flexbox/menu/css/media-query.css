@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Tablets */
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    menu ul {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    main {
+        max-width: 700px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    menu ul {
+        flex-flow: row-reverse;
+        justify-content: flex-end;
+    }
+}
