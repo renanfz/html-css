@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Box</title>
-    <style>
+    <style> /* Teste de menu responsivo com flex box */
         body {
             background-color: rgb(43, 43, 43);
             font-family: monospace;
@@ -12,12 +12,12 @@
         .conteiner {
             display: flex;
             background-color: white;
-            margin-top: 50px;
             padding: 5px;
-
 
             flex-flow: row wrap;
             align-items: flex-start;
+            position: fixed ;
+            top: 0;
         }
 
         .item {
@@ -31,8 +31,11 @@
         @media screen and (max-width: 731px) {
             .conteiner {
                 flex-flow: column wrap;
-                width: 80px;
                 transition: 3s;
+            }
+
+            .item {
+                width: 90vw;
             }
         }
     </style>
@@ -48,7 +51,7 @@
         <div class="item">Bloco E</div>
         <div class="item">Bloco E</div>
         <div class="item">Bloco E</div>
-
     </div>
+    <p>lorem</p>
 </body>
 </html>
