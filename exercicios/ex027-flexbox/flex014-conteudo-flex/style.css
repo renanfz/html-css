@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+    margin-bottom: 6px;
+}
+
+header, section.normal {
+    padding: 20px;
+}
+
+section.flex-content {
+    background-color: rgb(217, 217, 217);
+    padding: 20px;
+
+    flex-flow: column nowrap;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+article > div.text {
+    flex: 1 1 500px;
+}
