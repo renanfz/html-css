@@ -11,10 +11,7 @@
         .conteiner {
             display: grid;
             border: 2px solid blue; 
-            grid-template-columns: 50px 30% 3fr;
-            gap: 10px;
-            grid-auto-rows: 70px;
-            place-items: space-between;
+            grid-template: repeat(4, 50px) / repeat(3, 1fr);
         }
 
         .item {
@@ -22,18 +19,46 @@
             padding: 8px;
             text-align: center;
         }
+
+        #caixa1 {
+            background-color: rgba(255, 255, 0, 0.304);
+            grid-row-start: 1;
+            grid-row-end: 5;
+
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        #caixa2 {
+            background-color: rgba(0, 0, 255, 0.249);
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        #caixa3 {
+            background-color: rgba(220, 20, 60, 0.266);
+            grid-row-start: 3;
+            grid-row-end: 5;
+
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        #caixa4 {
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
+        <div class="item" id="caixa1">A</div>
+        <div class="item" id="caixa2">B</div>
+        <div class="item" id="caixa3">C</div>
+        <div class="item" id="caixa4">D</div>
     </div>
 </body>
 </html>
