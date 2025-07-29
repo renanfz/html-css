@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grid responsivo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conteiner">
-        
+    <div id="container-tarefa">
+        <div class="comandos">
+            <input type="text" placeholder="Adicione uma nova tarefa" id="inputTarefa">
+            <button onclick="adicionarTarefa()">+</button>
+        </div>
+
+        <ul id="lista">
+            <li>12</li>
+            <li>34</li>
+            <li>32</li>
+        </ul>
     </div>
+    <script src="logica.js"></script>
 </body>
 </html>

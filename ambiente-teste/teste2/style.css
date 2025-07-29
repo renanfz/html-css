@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#container-tarefa {
+    display: flex;  
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: rgb(232, 232, 232);
+    width: 400px;
+}
+
+.comandos {
+    height: 50px;
+    width: 300px;
+    align-items: center;
+}
+
