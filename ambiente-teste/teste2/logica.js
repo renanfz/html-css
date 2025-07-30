@@ -1,13 +1,21 @@
 function adicionarTarefa() {
-    let input = document.getElementById('inputTarefa').value;
+    let input = document.getElementById('inputTarefa');
     let lista = document.getElementById('lista')
     let item = document.createElement('li')
     let msg = document.querySelector('p')
-    msg.remove()
-    item.textContent = input
+
+    if (msg) {
+        msg.remove()
+    }
+
+    item.textContent = input.value
     lista.appendChild(item)
+    input.value = ' '
+    input.focus()
+}
 
-
-    
-    return alert(item)
+function verificarCampo(campo) {
+    if (campo.value == ' ') {
+        
+    }
 }
