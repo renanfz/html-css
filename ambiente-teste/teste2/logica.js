@@ -3,7 +3,11 @@ function adicionarTarefa() {
     let lista = document.getElementById('lista')
     let item = document.createElement('li')
     let msg = document.querySelector('p')
-
+    
+    if (!verificarCampo(input)) { // Se for false
+        return;
+    }
+    
     if (msg) {
         msg.remove()
     }
@@ -15,7 +19,10 @@ function adicionarTarefa() {
 }
 
 function verificarCampo(campo) {
-    if (campo.value == ' ') {
-        
+    if (campo.value.trim() == '') {
+        campo.style.borderColor = 'red';
+        campo.placeholder = 'Campo obrigatório!';
+        return false
     }
+    return true
 }
