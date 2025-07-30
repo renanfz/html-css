@@ -8,7 +8,7 @@
 
 :root {
     --preto: #000000;
-    --cinza-escuro: #333333;
+    --cinza-escuro: #212121;
     --cinza-medio: #828282;
     --azul-profundo: #0d47a1;
     --azul-claro: #1976d2;
@@ -25,6 +25,10 @@ h1 {
     font-size: 1.8em;
     font-weight: 400;
     margin-bottom: 35px;
+}
+
+p {
+    margin-top: 60px;
 }
 
 #container-tarefa {
@@ -47,21 +51,22 @@ div.comandos {
 
 div.comandos > input {
     height: 35px;
-    width: 95vw;
-    text-indent: 9px;
-    border-radius: 6px;
+    width: 90vw;
+    text-indent: 10px;
+    border-radius: 10px;
     border: 1px solid var(--cinza-medio);
     background-color: var(--preto);
     color: white;
 }
 
 div.comandos > button {
-    font-size: 1em;
-    height: 30px;
-    width: 31px;
+    font-weight: 0;
+    font-size: 2em;
+    height: 35px;
+    width: 35px;
     border-radius: 6px;
     border: none;
-    background-color: var(--azul-claro);
+    background-color: var(--preto);
     margin-left: 5px;
     color: white;
 }
@@ -87,5 +92,6 @@ ul > li {
 /* Efeitos */
 
 div.comandos > input:focus {
-    border-color: blue;
+    outline: none;
+    border-color: white;
 }
