@@ -3,6 +3,10 @@ function adicionarTarefa() {
     let lista = document.getElementById('lista')
     let item = document.createElement('li')
     let msg = document.querySelector('p')
+
+    input.addEventListener('keypress', function() {
+        this.style.borderColor = 'white'
+    })
     
     if (!verificarCampo(input)) { // Se for false
         return;
