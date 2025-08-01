@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+/* Mobile First */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cinza: #c1c1c1;
+    --azul: #006dcc;
+}
+
+body, html {
+    font-family: 'Segoe UI';
+
+}
+
+header {
+    padding: 1em;
+}
+
+header > a {
+    
+}
+
+main {
+    width: 90vw;
+    margin: 10px auto;
+}
+
+div#catalogo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+div.produto {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border: 1px solid var(--cinza);
+}
+
+img {
+    width: 35%;
+}
