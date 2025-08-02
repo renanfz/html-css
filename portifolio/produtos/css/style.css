@@ -107,3 +107,7 @@ footer {
 header > a:hover {
     border: 1px solid black;
 }
+
+.produto > button:hover {
+    text-decoration: underline;
+}
