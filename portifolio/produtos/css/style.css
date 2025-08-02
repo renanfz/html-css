@@ -10,15 +10,15 @@
 
 :root {
     --cinza: #c1c1c1;
+    --cin: #E4E4E9;
     --cinza-claro: #F6F6F7;
     --azul: #006dcc;
    /*  #E4E4E9 */
 }
 
 body, html {
-    background-color: var(--cinza-claro);
     font-family: 'Segoe UI';
-
+    background-color: var(--cinza-claro);
 }
 
 h1 {
@@ -37,10 +37,11 @@ header > a { /* Botao Carrinho */
     display: inline-flex;
     justify-content: space-between;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
     padding: 5px 8px;
     width: 92px;
-    background-color: white;
+    background-color: var(--cin);
     color: black;
     font-weight: 500;
 }
@@ -87,4 +88,22 @@ h3.titulo-produto {
 
 img {
     width: 55%;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 2.3em;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(32, 32, 32);
+}
+
+/* Efeitos */
+
+header > a:hover {
+    border: 1px solid black;
 }
