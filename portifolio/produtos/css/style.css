@@ -10,20 +10,43 @@
 
 :root {
     --cinza: #c1c1c1;
+    --cinza-claro: #EAEAEB;
     --azul: #006dcc;
 }
 
 body, html {
+    background-color: var(--cinza-claro);
     font-family: 'Segoe UI';
 
 }
 
+h1 {
+    font-size: 1.4em;
+}
+
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--cinza);
     padding: 1em;
 }
 
-header > a {
-    
+header > a { /* Botao Carrinho */
+    display: inline-flex;
+    justify-content: space-between;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    width: 92px;
+    background-color: #E4E4E9;
+    color: black;
+    font-weight: 500;
+}
+
+header svg.lucide {
+    width: 20px;
+    height: 20px;
 }
 
 main {
@@ -34,14 +57,21 @@ main {
 div#catalogo {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
+    gap: 15px;
 }
 
-div.produto {
+div.produto { /* Cartao do produto */
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    border: 1px solid var(--cinza);
+    height: 225px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.156);
+}
+
+h3.titulo-produto {
+    margin-bottom: 4px;
 }
 
 img {
