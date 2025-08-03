@@ -32,3 +32,9 @@ header {
     border-bottom: 1px solid var(--cinza);
     padding: 1em;
 }
+
+div#carrinho {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
