@@ -1,0 +1,21 @@
+/* Versao Desktop */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Segoe UI';
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 230px;
+    grid-template-rows: repeat(6, 40px);
+}
+
+div.item {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
