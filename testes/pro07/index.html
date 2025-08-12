@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="container">
+        <div id="titulo">
+            <h2>Calculadora de troco</h2>
+            <p>Insira o valor da conta para calcular o troco</p>
+        </div>
+
+        <form id="formulario" onsubmit="processar()">
+            <div class="input-group">
+                <label for="subtotal">Sub total</label>
+                <input type="number" name="subtotal" id="subtotal" required placeholder="R$ 0,00">
+            </div>
+
+            <div class="input-group">
+                <label for="desconto">Desconto</label>
+                <input type="number" name="desconto" id="desconto" placeholder="Porcentagem" min="1" max="50">
+            </div>
+            
+            <div class="input-group">
+                <label for="recebido">Total recebido em dinheiro</label>
+                <input type="number" name="recebido" id="recebido" placeholder="R$ 0,00" required>
+            </div>
+
+            <div class="input-group">
+                <label for="troco">Troco em dinheiro</label>
+                <input type="text" name="troco" id="troco" readonly>
+            </div>
+
+            <div class="input-group">
+                <label for="total">Total da venda</label>
+                <input type="text" name="total" id="total" readonly>
+            </div>
+
+            <div id="botoes">
+                <button type="submit" id="continuar">Finalizar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p><i>Desenvolvido por Renan</i></p>
+    </footer>
+    <script src="logica.js"></script>
+</body>
+</html>
