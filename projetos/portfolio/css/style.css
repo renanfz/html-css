@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #181818;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+}
+
+#menu > a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+section#capa {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-color: black;
+    background-image: url("../imagens/programador.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: 70px;
+    color: white;
+
+}
+
+div > h1 {
+    font-size: 2.3em;
+    margin-bottom: 4px;
+}
