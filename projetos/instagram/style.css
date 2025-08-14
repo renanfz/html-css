@@ -21,5 +21,9 @@ body, html {
     background-image: url(./imagens/main-foto.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 500px;
+    background-size: 350px auto;
+}
+
+.column-right {
+    
 }
