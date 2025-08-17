@@ -1,0 +1,62 @@
+/* Versao Mobile */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI';
+    background-color: #d6d6d6;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 35px);
+    gap: 3px;
+    background-color: #d6d6d6;
+    
+    border: 1px solid red;
+    padding: 5px 9px;
+}
+
+div.item {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    border-radius: 4px;
+}
+
+div.item > a {
+    text-decoration: none;
+    text-indent: 4px;
+    color: black;
+}
+
+div.item:hover {
+    background-color: #bdbdbd;
+    transition: .4s ease-in-out;
+}
+
+main {
+    background-color: white;
+    margin: 5px;
+    border-radius: 4px;
+    height: 300px;
+}
+
+svg.lucide {
+    height: 18px;
+}
