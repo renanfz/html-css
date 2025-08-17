@@ -53,6 +53,13 @@ main {
     background-color: white;
     margin: 5px 5px 5px 0px;
     border-radius: 4px;
+    padding: 8px 14px;
+    text-align: justify;
+    transition: 1s ease-in-out;
+}
+
+main > h1 {
+    margin-bottom: 5px;
 }
 
 svg.lucide {
