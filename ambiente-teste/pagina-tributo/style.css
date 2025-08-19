@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #eaeaea;
+    background-color: #f0f0f0;
     text-align: center;
     padding: 13px;
 }
@@ -23,16 +23,21 @@ main {
 }
 img {
     width: 40%;
-    margin: 20px auto;
+    max-width: 250px;
+    margin: 30px auto;
     border-radius: 50%;
 }
 
 h2 {margin-bottom: 7px;}
 
 section {
-    background-color: #f6f6f6;
+    background-color: #f0f0f0;
     margin: 7px;
     border-radius: 5px;
+}
+
+section > p {
+    line-height: 22px;
 }
 
 #descricao {
@@ -42,6 +47,7 @@ section {
 
 #timeline {
     padding: 13px;
+    margin: 8px 0px 24px;
 }
 
 #timeline > table {
@@ -56,6 +62,26 @@ section {
 #timeline > table td, th {
     border: 1px solid gray;
     padding: 8px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 9px;
+}
+
+footer > p {
+    line-height: 23px;
+}
+
+/* Telas maiores */
+
+@media screen and (min-width: 468px){
+    main {
+        width: 97%;
+        max-width: 700px;
+        margin: auto;
+    }
 }
 
 
